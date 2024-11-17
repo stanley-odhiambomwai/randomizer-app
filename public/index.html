@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomizer App</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="/style.css/in.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-pink-400 p-6 rounded-lg shadow-lg w-full max-w-md">
+      <h1 class="text-2xl font-bold text-gray-800 text-center"> Name Randomizer</h1>
+      <div class="mt-4">
+        <textarea id="namesInput" class="w-full p-2 border rounded-lg hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500" rows="3" placeholder="Enter names, separated by commas"></textarea>
+      </div>
+      <button id="randomizeBtn" class="mt-4 bg-blue-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg w-full">Randomize</button>
+      <button id="clearBtn" class="mt-2 bg-red-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg w-full">Clear Names</button>
+      <div id="randomizedResult" class="mt-6 hidden">
+        <h2 class="text-xl font-bold text-gray-800">Randomized Names:</h2>
+        <ul id="resultList" class="mt-2 list-disc list-inside"></ul>
+      </div>
+      <div id="historySection" class="mt-6">
+        <h2 class="text-xl font-bold text-gray-800 bg-white">History:</h2>
+        <ul id="historyList" class="mt-2 list-decimal list-inside"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
